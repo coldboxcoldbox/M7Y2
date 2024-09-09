@@ -10,9 +10,6 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', description="ботяра", intents=intents)
 @bot.command()
-async def a(ctx):
-    await ctx.send(f"Бот в сети")
-@bot.command()
 async def image_save(ctx):
     if ctx.message.attachments:
         for attachment in ctx.message.attachments:
